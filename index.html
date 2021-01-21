@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="../Beaumont.jpg" class="logo" alt="logo" />
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+      <ul class="links">
+        <li>
+          <a href="#home">home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#projects">projects</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/daniel-beaumont/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/danscodingjourney/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/daniel.beaumont.31/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/danbeaumont95" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+       
+        <!-- <li>
+          <a href="https://www.twitter.com">
+            <i class="fab fa-sketch"></i>
+          </a>
+        </li> -->
+      </ul>
+        </div>
+    </nav>
+
+    <br>
+    <div id="home">
+        <h2>Home</h2>
+        <div class="underline"></div>
+        <br>
+      <p id="intro">Hi! My name is Dan Beaumont, thankyou for taking the time to visit my portfolio page! Have a look around, my links are in the header if you would like to view my social pages</p>
+      <img id="profilePhoto" object-fit="center" width="500px" height="420px"src="../profile.jpeg">
+    </div>
+    <br>
+    <br>
+    <div id="about">
+      <h2>About</h2>
+      <div class="underline"></div>
+      <br>
+      <p>
+  
+        My name is Dan and I am currently a trainee software developer at Northcoders bootcamp mainly focused around JavaScript and its frameworks, both front end and back end.
+         <br>
+         In Summer 2018 I graduated from University of Huddersfield with a 2:1 in Business Management and wasnt sure what I wanted to do with my career, so applied for a<br>
+         variety of roles in marketing, law and accounting. I then took a role offered to me at a solicitors firm in Leeds, but soon realised that a career in law wasnt what<br>
+         I wanted to do with my career, so I then started looking into programming. I quickly got hooked when looking at online courses in HTML & CSS.<br>
+         This then led me onto learning JavaScript but doing this only in evenings and weekends didn't give me enough time to learn programming to my full ability<br>
+         which then led me to applying to join Northcoders, and doing so has been the best decision of my life so far.
+         <br>
+         <br>
+         <b>Technical Skills</b>
+         <li><b>Languages:</b> JavaScript</li>
+         <li> <b>Front-end:</b> HTML5, CSS3, React(Currently learning)</li>
+         <li> <b>Back-end:</b> Express, PostgreSQL, Knex, Node</li>
+         <li> <b>Testing:</b> Jest</li>
+         
+       </p>
+    </div>
+
+  <section class="project">
+      <!--title-->
+      <div class="title">
+        <h2 id="projects">Projects</h2>
+        <div class="underline"></div>
+      </div>
+      <!--filter buttons-->
+      <div class="btn-container">
+
+      </div>
+      <!--project items-->
+      <div class="section-center">
+  
+      </div>
+  </section>
+  <br>
+  <div id="contact">
+      <h2>Contact</h2>
+      <div class="underline"></div>
+      <br>
+      <p>If you would like to get in contact with me, please fill in the
+          box below and I will respond directly to your email provided.
+      </p>
+      
+  </div>
+    <form id="form">
+        <input type="text" id="subject" placeholder="Subject"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
+        <input class="inputBtn"type="submit" value="Submit">
+    </form>
+
+<script src="./app.js"></script>
+
+</body>
+</html>
