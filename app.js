@@ -5,7 +5,8 @@ const arrOfProjects = [
         category: 'JavaScript',
         price: 15.99,
         img: './tipcalculator.jpg',
-        desc: 'This was a pure JS tip calculator site that I created at the start of my JavaScript journey'
+        desc: 'This was a pure JS tip calculator site that I created at the start of my JavaScript journey',
+        link: 'https://codepen.io/danbeaumont95/full/PozNENK'
     },
     {
         id: 2,
@@ -14,6 +15,7 @@ const arrOfProjects = [
         price: 13.99,
         img: "./mean.jpg",
         desc: `This is a codepen site that works out a students mean of 2 test results`,
+        link: 'https://codepen.io/danbeaumont95/full/jOrqvpd'
       },
       {
         id: 2,
@@ -22,6 +24,16 @@ const arrOfProjects = [
         price: 13.99,
         img: "./Pogba.png",
         desc: `This is a HTML/CSS fanpage I created about a year ago when I first started my programming journey`,
+        link: 'https://codepen.io/danbeaumont95/full/LYPowLK'
+      },
+      {
+          id: 3,
+          title: 'React Caclculator app',
+          category: 'JavaScript',
+          price: 13.99,
+          img: './Calculator.png',
+          desc: 'This was a working calculator app that I created using React and is hosted on GitHub pages',
+          link: 'https://danbeaumont95.github.io/react-calculator/'
       }
 ];
 
@@ -57,13 +69,16 @@ window.addEventListener('DOMContentLoaded', function(){
 function displayProjectItems(projectItems) {
     let displayProjects = projectItems.map(function(item) {
         return `<article class="project-item">
+        <a href=${item.link} target="_blank">
         <img src=${item.img} class="photo" alt=${item.title}>
         <div class="item-info">
             <header>
               <h4>${item.title}</h4>   
             </header>
             <p class="item-text">${item.desc}</p>
+            </a>
         </div>
+        
     </article>`
     })
     displayProjects = displayProjects.join('')
