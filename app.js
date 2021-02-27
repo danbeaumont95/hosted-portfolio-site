@@ -1,6 +1,15 @@
 const arrOfProjects = [
     {
         id: 1,
+        title: 'React NC-News Front-end',
+        category: 'JavaScript',
+        price: 99.99,
+        img: './nc-news-frontend.png',
+        desc: 'This is my first full stack project, it is a news site (similar to reddit) where I used information from my own API to create a fully deployed website',
+        link: 'https://dan-beaumont-nc-news.netlify.app/'
+    },
+    {
+        id: 4,
         title: 'Tip calculator',
         category: 'JavaScript',
         price: 15.99,
@@ -34,7 +43,7 @@ const arrOfProjects = [
           img: './Calculator.png',
           desc: 'This was a working calculator app that I created using React and is hosted on GitHub pages',
           link: 'https://danbeaumont95.github.io/react-calculator/'
-      }
+      },
 ];
 
 const sectionCenter = document.querySelector('.section-center');
